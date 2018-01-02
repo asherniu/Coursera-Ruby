@@ -75,11 +75,7 @@ class Solution
   #  attribute value determined previously and stores them in highest_count_words_across_lines.
   def calculate_line_with_highest_frequency()
     @highest_count_across_lines = analyzers.max_by {|a| a.highest_wf_count}.highest_wf_count
-    puts highest_count_across_lines
     @highest_count_words_across_lines = analyzers.select { |e| e.highest_wf_count == highest_count_across_lines }
-    puts "this"
-    puts highest_count_words_across_lines
-    puts "that"
   end
   #Implement the print_highest_word_frequency_across_lines() method to
   #* print the values of objects in highest_count_words_across_lines in the specified format
